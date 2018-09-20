@@ -70,14 +70,6 @@
                 } else {
                     this.currentCity = localStorage.city;
                 }
-                console.log(this.currentCity)
-                // fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.currentCity}&appid=d34d63b2f423980aa0ecf674d904f404`)
-                //     .then(response => response.json())
-                //     .then((jsonData) => {
-                //         let data = jsonData;
-                //         this.test = data;
-                //         return this.test;
-                //     })
                 for (let i = 0; i < this.cityList.length; i++) {
                     if (this.cityList[i].name.toLowerCase().includes(this.currentCity.toLowerCase())) {
                         this.cityResultDisplay.push(this.cityList[i]);
